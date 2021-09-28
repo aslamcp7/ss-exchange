@@ -1,7 +1,32 @@
 <app-header></app-header>
 <div class="background-clor">
-  <div class="borders-hadhi">
-    <h1>Hadhi</h1>
+  <div class="borders-card">
+    <div class="Card-header">
+      <div class="row">
+        <div class="col-md-7">
+          <p class="SuperHead mt-2">Super MSA Account Lists</p>
+        </div>
+        <div class="col-md-5">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <mdb-icon
+              fas
+              class="download-icon"
+              icon="cloud-download-alt mt-1"
+            ></mdb-icon>
+            <p class="download-text">Download sheet</p>
+            <button class="btn btn-primary me-md-2 btn-add" type="button">
+              Add Account
+            </button>
+            <input
+              class="btn-search"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
     <table id="tableSortExample" mdbTable class="z-depth-1">
       <thead>
         <tr>
@@ -19,13 +44,61 @@
       </thead>
       <tbody>
         <tr *ngFor="let el of elements; let i = index">
-          <th scope="row">{{ el.id }}</th>
-          <td>{{ el.first }}</td>
-          <td>{{ el.last }}</td>
-          <td>{{ el.handle }}</td>
-          <td>{{ el.aslam }}</td>
+          <th scope="row">
+            <mdb-icon class="plus-icon" fas icon="plus-circle"></mdb-icon
+            >{{ el.ApplicationName }}
+          </th>
+          <!-- <td>
+            <button mdbBtn color="indigo" type="button">
+              {{ el.UserName }}
+            </button>
+          </td> -->
+          <td>{{ el.UserName }}</td>
+          <td>{{ el.NetBalance }}</td>
+          <td>{{ el.RegDate }}</td>
+          <td>{{ el.Status }}</td>
+          <td>{{ el.BalanceinCompanyCurrency }}</td>
+          <td>{{ el.Balance }}</td>
+          <td>{{ el.MSATotalBalance }}</td>
+          <td>{{ el.SuperTotalBalance }}</td>
+          <td>{{ el.Credit }}</td>
+          <td>{{ el.SettingBalance }}</td>
+          <td>{{ el.DealCurrency }}</td>
+          <td>{{ el.DealRate }}</td>
+          <td>{{ el.BalanceinDealCurrency }}</td>
         </tr>
       </tbody>
     </table>
+    <nav class="py-1">
+      <ul class="pagination pg-blue justify-content-end">
+        <li class="page-item">
+          <a class="page-link" aria-label="Previous" mdbWavesEffect>
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" mdbWavesEffect>1</a></li>
+        <li class="page-item"><a class="page-link" mdbWavesEffect>2</a></li>
+        <li class="page-item"><a class="page-link" mdbWavesEffect>3</a></li>
+        <li class="page-item">
+          <a class="page-link" aria-label="Next" mdbWavesEffect>
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="pagination justify-content-end">
+        <li class="page-item disabled">
+          <a class="page-link">Previous</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </div>

@@ -1,8 +1,43 @@
-.borders-hadhi {
+.borders-card {
   border-radius: 5px;
-  background-color: white;
+  background-color: #37474f;
 }
 .background-clor {
-  background-color: grey;
+  background-color: #263238;
   padding: 50px;
+}
+.SuperHead {
+  font-size: medium;
+  font-weight: 600;
+  color: white;
+  text-align: left;
+}
+.Card-header {
+  padding: 15px;
+}
+.download-icon {
+  color: white;
+  margin-top: 3px;
+}
+.download-text {
+  color: white;
+  margin-top: 3px;
+  margin-right: 15px;
+}
+.btn-add {
+  border-radius: 10px;
+}
+.btn-search {
+  border-radius: 15px;
+  padding: 5px;
+}
+.search-icon {
+  color: white;
+}
+.plus-icon {
+  padding: 5px;
+}
+.marginleft {
+  justify-content: right !important;
+  text-align: right !important;
 }

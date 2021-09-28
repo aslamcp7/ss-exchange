@@ -1,8 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 
-body {
-  background-color: grey;
-}
+// body {
+//   background-color: black;
+// }
 .text-poppy-red {
   color: #ef5350 !important;
 }
@@ -11,4 +11,13 @@ body {
 }
 .bg-poppy-red {
   background-color: #ef5350 !important;
+}
+.table th {
+  font-size: 0.8rem;
+}
+.table {
+  color: white !important;
+}
+.page-link {
+  color: white !important;
 }
