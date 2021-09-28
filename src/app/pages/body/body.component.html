@@ -1,0 +1,31 @@
+<app-header></app-header>
+<div class="background-clor">
+  <div class="borders-hadhi">
+    <h1>Hadhi</h1>
+    <table id="tableSortExample" mdbTable class="z-depth-1">
+      <thead>
+        <tr>
+          <th
+            *ngFor="let head of headElements; let i = index"
+            aria-controls="tableSortExample"
+            scope="col"
+            [mdbTableSort]="elements"
+            [sortBy]="headElements[i]"
+          >
+            {{ head | titlecase }}
+            <mdb-icon fas icon="sort"></mdb-icon>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let el of elements; let i = index">
+          <th scope="row">{{ el.id }}</th>
+          <td>{{ el.first }}</td>
+          <td>{{ el.last }}</td>
+          <td>{{ el.handle }}</td>
+          <td>{{ el.aslam }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
