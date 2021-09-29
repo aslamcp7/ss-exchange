@@ -45,7 +45,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let el of elements; let i = index" (click)="clickEvent()">
+        <tr *ngFor="let el of elements; let i = index">
           <th scope="row">
             <mdb-icon class="plus-icon" fas icon="plus-circle"></mdb-icon>
             {{ el.ApplicationName }}
@@ -57,7 +57,6 @@
               {{ el.UserName }}
             </span>
           </td>
-          <!-- <td>{{ el.UserName }}</td> -->
           <td>
             <span
               class="badge bg-{{ el.NetBalance === 'INR' ? 'primary' : '' }}"
@@ -65,7 +64,6 @@
               {{ el.NetBalance }}
             </span>
           </td>
-          <!-- <td>{{ el.NetBalance }}</td> -->
           <td>{{ el.RegDate }}</td>
           <td>
             <span
@@ -74,7 +72,6 @@
               {{ el.Status }}
             </span>
           </td>
-          <!-- <td>{{ el.Status }}</td> -->
           <td>{{ el.BalanceinCompanyCurrency }}</td>
           <td>{{ el.Balance }}</td>
           <td>{{ el.MSATotalBalance }}</td>
@@ -84,7 +81,6 @@
               {{ el.Credit }}
             </span>
           </td>
-          <!-- <td>{{ el.Credit }}</td> -->
           <td>{{ el.SettingBalance }}</td>
           <td>
             <span
@@ -93,13 +89,11 @@
               {{ el.DealCurrency }}
             </span>
           </td>
-          <!-- <td>{{ el.DealCurrency }}</td> -->
           <td>
             <span class="badge bg-{{ el.DealRate === '10%' ? 'success' : '' }}">
               {{ el.DealRate }}
             </span>
           </td>
-          <!-- <td>{{ el.DealRate }}</td> -->
           <td>
             {{ el.BalanceinDealCurrency }}<mdb-icon far icon="edit"></mdb-icon>
           </td>
