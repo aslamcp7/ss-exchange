@@ -28,8 +28,8 @@ export class BodyComponent implements OnInit {
     for (let i = 1; i <= 8; i++) {
       this.elements.push({
         ApplicationName: "Mary Dona",
-        UserName: "Mary Dona",
-        NetBalance: "INR ",
+        UserName: "MaryDona",
+        NetBalance: "INR",
         RegDate: "30/10/2020",
         Status: "ACTIVE",
         BalanceinCompanyCurrency: "107,41.90",
