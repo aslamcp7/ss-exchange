@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class BodyComponent implements OnInit {
   elements: any = [];
+  status: boolean = false;
   headElements = [
     "Application Name",
     "User Name",
@@ -42,6 +43,15 @@ export class BodyComponent implements OnInit {
         DealRate: "10%",
         BalanceinDealCurrency: "0.00",
       });
+    }
+  }
+
+  clickEvent() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
     }
   }
 }
