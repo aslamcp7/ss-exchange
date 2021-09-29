@@ -26,7 +26,7 @@ export class BodyComponent implements OnInit {
   ];
 
   ngOnInit() {
-    for (let i = 1; i <= 8; i++) {
+    for (let i = 1; i <= 10; i++) {
       this.elements.push({
         ApplicationName: "Mary Dona",
         UserName: "MaryDona",
