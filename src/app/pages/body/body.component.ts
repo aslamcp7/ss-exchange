@@ -8,6 +8,7 @@ import { Component, OnInit } from "@angular/core";
 export class BodyComponent implements OnInit {
   elements: any = [];
   status: boolean = false;
+  visible: false;
   headElements = [
     "Application Name",
     "User Name",
